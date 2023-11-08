@@ -44,7 +44,7 @@ RUN apk --no-cache add \
     xz=${XZ_VERSION} \
     zlib=${ZLIB_VERSION}
 
-RUN wget mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
+RUN wget https://mirrors.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
  && tar -xzf install-tl-unx.tar.gz \
  && rm install-tl-unx.tar.gz \
  && mv install-tl-* install-tl
